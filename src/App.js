@@ -7,13 +7,23 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import Project from "./components/Project";
+import { useState } from "react";
 
 export default function App() {
+  const [loading , setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if(spinner){
+    setTimeout(()=>{
+      spinner.style.display = "none" ; 
+      setLoading(false) ; 
+    },3000 );
+  }
   return (
+   !loading && (
     <>
       <Router>
+      
         <Navbar />
-
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/About" element={<About />} />
@@ -32,5 +42,9 @@ export default function App() {
           </ul>
         </div>
     </>
+
+   )
+    
+   
   );
 }
