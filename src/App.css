@@ -8,14 +8,14 @@
 
 body {
   width: 100%;
-  background-color: #96b1a6;
+  background: linear-gradient(to bottom , #9FA5D5 0% , #E8F5C8 100%);
 }
 
 .contact,
 .about,
 .home,
-.skill,
-.project {
+.skill
+ {
   padding: 15px;
   width: 100%;
   display: flex;
@@ -25,22 +25,22 @@ body {
   height: 630px;
 }
 p {
-  color: rgb(45 3 62);
+  color: #450d4c;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 5;
 }
 .heading {
-  color: rgb(0 2 2);
+  color: rgb(2 30 30);
+    z-index: 3;
 }
 
 /******************************************/
 /* Home Page */
 /******************************************/
 .heading1 {
-  color: #891010;
-}
-.navigation__item a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #f1f1f1;
+  color: #1bab68;
+    z-index: 5;
 }
 
 /******************************************/
@@ -64,10 +64,9 @@ p {
   justify-content: center;
   margin: 10px;
   color: #26a775;
-  border: 1px solid #062e1f;
+  
   z-index: 5 ;
-
-  background: rgb(1, 12, 15);
+  
 }
 .card-title,
 .card-img-top {
@@ -76,6 +75,16 @@ p {
 /******************************************/
 /* Project Page */
 /******************************************/
+
+.project{
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 630px;
+}
 .projectList{
   z-index: 5 ;
 }
@@ -98,20 +107,9 @@ p {
 
 .contact{
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  background: linear-gradient(to bottom , #9FA5D5 0% , #E8F5C8 100%);
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 .contactCard{
   padding: 10px;
@@ -151,13 +149,13 @@ p {
   z-index: 5 ;
   margin: 10px;
   padding: 5px;
-  color: #041a0c;
+ color:  #581b9b  ;
 }
 .social-icon a {
   padding: 10px;
 }
-.social-icon a :hover {
-  color: #891010;
+.social-icon a:hover {
+  color: #0ba5cc;
 }
 
 .animation-area {
@@ -176,9 +174,10 @@ p {
 	position: absolute;
 	display: block;
 	list-style: none;
+  border-radius: 23px;
 	width: 25px;
 	height: 25px;
-	background: rgba(3, 36, 85, 0.753);
+	background: rgb(69 86 98 / 75%);
 	animation: animate 20s linear infinite;
 	bottom: -150px;
 }
@@ -236,17 +235,35 @@ p {
 
 /****************************************************************/
 @media (max-width: 530px) {
+
+
+  .box-area  {
+    height: 1000px;
+  }
   .contact,
-  .about,
-  .home,
   .skill ,
+  .home , .about , 
   .project
    {
-    top: 89px;
     flex-direction: column;
-    height: 450%;
     overflow: hidden;
     position: relative;
+  }
+   .home , .about{
+    height: 100vh;
+   }
+   .about{
+    top: -39px;
+   }
+   .skill{
+    top: -41px;
+    height: 900px;
+   }
+  .contact {
+     top: 11px;
+  }
+  .project{
+    top: 40px;
   }
   .navigation {
     justify-content: center;
@@ -258,5 +275,15 @@ p {
   }
   .social-icon a {
     padding: 10px;
+  }
+}
+
+@media (max-width: 760px){
+  .project{
+    top: 40px;
+    flex-direction: column;
+    height: 450%;
+    overflow: hidden;
+    position: relative;
   }
 }
