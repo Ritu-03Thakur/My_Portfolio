@@ -10,6 +10,11 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <script
+    src="https://kit.fontawesome.com/0f83e5d3b7.js"
+    crossorigin="anonymous"
+  ></script>
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/wallpaper.jpg" />
     <!-- the above link is for logo -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -22,9 +27,87 @@
     />
 
     <title>Portfolio</title>
+    <style>
+      
+    #spinner {
+    
+   height: 100vh ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to bottom right , #070630 0% , #060454 100%);
+}
+
+
+
+   
+#fig{
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg , cyan ,#fff);
+    margin: 10px;
+    border-radius: 20px;
+    animation: fig 1s linear infinite ;
+}
+#fig:nth-child(2){
+    animation-delay: 0.1s ;
+}
+#fig:nth-child(3){
+    animation-delay: 0.2s ;
+}
+#fig:nth-child(4){
+    animation-delay: 0.3s ;
+}
+#fig:nth-child(5){
+    animation-delay: 0.4s ;
+}
+#fig:nth-child(6){
+    animation-delay: 0.5s ;
+}
+#fig:nth-child(7){
+    animation-delay: 0.6s ;
+}
+#fig:nth-child(8){
+    animation-delay: 0.7s ;
+}
+#fig:nth-child(9){
+    animation-delay: 0.8s ;
+}
+#fig:nth-child(10){
+    animation-delay: 0.9s ;
+}
+
+@keyframes fig {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="spinner">
+     
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>
+          <div id="fig"></div>  
+    </div>
+
     <div id="root"></div>
      <!-- bootstrap link -->
     <script
@@ -34,3 +117,4 @@
     ></script>
   </body>
 </html>
+
