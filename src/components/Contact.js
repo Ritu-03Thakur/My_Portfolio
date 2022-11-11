@@ -8,15 +8,7 @@ export default function Contact() {
     <>
       <div className="contact">
         <h1 className="heading">Contact Me</h1>
-        <div className="animationArea">
-          <ul className="box-area">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        
         <div className="contactCard  ">
           <form>
             <div className="form">
