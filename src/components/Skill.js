@@ -11,7 +11,10 @@ function Skill() {
   return (
     <>
       <div className="skill">
-        <h1 className="heading">Skills</h1>
+        <div className="head">
+
+        <h1 className="heading">SKILL</h1>
+        </div>
         <p>
           Here are the main programming langauges <br />
           that I have experience with :{" "}

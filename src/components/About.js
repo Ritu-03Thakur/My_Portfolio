@@ -7,7 +7,9 @@ function About() {
   return (
     <>
     <div className="about">
-      <h1 className="heading">About Me</h1>
+     
+      <h1 className="heading">ABOUT ME</h1>
+
       <p>
         I am Ritu Thakur a front-end developer . I am currently pursuing
         <br />
