@@ -32,15 +32,6 @@ export default function App() {
           <Route exact path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
-      <div className="animationArea">
-          <ul className="box-area">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
     </>
 
    )
