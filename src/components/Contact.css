@@ -4,10 +4,9 @@
 }
 
 .contact{
-  height: 100% ; 
-  width: 100%;
+  
   opacity: 1;
-  background: linear-gradient(rgb(161 177 109) , rgb(201 153 138) ,rgb(203 165 200) );
+  background: linear-gradient(rgb(204 217 160) , rgb(187 211 150) ,rgb(203 165 200) );
     align-items: center;
     justify-content: space-around;
 }
