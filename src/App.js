@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -8,6 +8,46 @@ import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import Project from "./components/Project";
 import { useState } from "react";
+
+const Layout = () => {
+  return (
+    <div className="app">
+      <Navbar />
+      <Outlet />
+     
+    </div>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/About",
+        element: <About />,
+      },
+      {
+        path: "/Skill",
+        element: <Skill />,
+      },
+      {
+        path: "/Project",
+        element: <Project />,
+      },
+      {
+        path: "/Contact",
+        element: <Contact />,
+      },
+      
+    ],
+  },
+]);
 
 export default function App() {
   const [loading , setLoading] = useState(true);
@@ -21,17 +61,7 @@ export default function App() {
   return (
    !loading && (
     <>
-      <Router>
-      
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/About" element={<About />} />
-          <Route exact path="/Skill" element={<Skill />} />
-          <Route exact path="/Project" element={<Project />} />
-          <Route exact path="/Contact" element={<Contact />} />
-        </Routes>
-      </Router>
+     <RouterProvider router={router} />    
     </>
 
    )
