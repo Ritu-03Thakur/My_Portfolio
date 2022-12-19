@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./Card/Card";
 import C from "./img/cLanguage_logo.jpeg";
 import Java from "./img/java_logo.jpeg";
 import Html from "./img/HTML_logo.jpeg";

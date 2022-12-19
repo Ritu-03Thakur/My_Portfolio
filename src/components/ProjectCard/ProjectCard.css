@@ -1,0 +1,75 @@
+ .view {
+float: left ;
+overflow: hidden;
+position: relative;
+}
+.view .img{
+    display: block;
+    width: 300px;
+    height: 230px;
+    position: relative;
+}
+.view .mask {
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 230px;
+    padding-top: 22px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0 ;
+}
+.view h2{
+    position: relative;
+}
+.view p {
+    position: relative;
+}
+.view  .info{
+    display: inline-block;
+    background-color: #dc3545;
+    text-align: center;
+    justify-content: center;
+}
+.view-first .img{
+    transition: all 0.2s linear;
+}
+.view-first .mask{
+    opacity: 0 ;
+    background-color: #dce4e0;
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0 ;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p {
+    transform: translateY(100px);
+    opacity: 0 ;
+    transition: all 0.2s linear;
+}
+.view-first h2 {
+    opacity: 0 ;
+    transition: all 0.2s ease-in-out;
+}
+.view-first:hover .img{
+    transform: scale(1.1);
+}
+.view-first:hover .mask{
+    opacity: 1 ;
+}
+.view-first:hover h2 ,
+.view-first:hover p ,
+.view-first:hover  .info 
+{
+    opacity: 1 ;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover  .info{
+    transition-delay: 0.2s;
+}

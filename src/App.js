@@ -1,11 +1,11 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // components
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skill from "./components/Skill";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 import Project from "./components/Project";
 import { useState } from "react";
 
