@@ -11,15 +11,18 @@ export default function Project() {
         <div className="projectList">
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/logo.jpeg"
-          title = "Shopping Website" 
-          desc = " Full Stack website "
-          github = "/"
+          desc = " Weather App "
           />
-          {/* <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard /> */}
+
+          <ProjectCard sx={{ m : 5 }  } 
+          pic = "./images/logo.jpeg"
+          desc = " Shawn  website "
+          />
+          <ProjectCard sx={{ m : 5 }  } 
+          pic = "./images/logo.jpeg"
+          desc = " Ritz-Chat App "
+          />
+          
         </div>
       </div>
     </>

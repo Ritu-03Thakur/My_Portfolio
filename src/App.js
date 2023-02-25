@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skill from "./components/Skill";
-import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Project from "./components/Project";
 import { useState } from "react";
 
@@ -14,7 +14,7 @@ const Layout = () => {
     <div className="app">
       <Navbar />
       <Outlet />
-     
+      < Footer /> 
     </div>
   );
 };
@@ -40,10 +40,7 @@ const router = createBrowserRouter([
         path: "/Project",
         element: <Project />,
       },
-      {
-        path: "/Contact",
-        element: <Contact />,
-      },
+     
       
     ],
   },

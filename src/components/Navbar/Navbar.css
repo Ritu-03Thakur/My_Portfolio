@@ -1,7 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
-  background-color: #060f24;
+  background-color: #060300;
+
   height: 70px;
   display: flex;
+  box-shadow:0px 1px 6px 1px rgb(24 58 74);
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -19,7 +27,7 @@
   }
   
   .nav-logo {
-    color: #3fe4dc;
+    color: rgb(36 91 116);
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -46,7 +54,7 @@
     color:#E43F5A
   }
   .nav-links:hover {
-    color: #3fe4dc;
+    color: rgb(24 58 74);
   }
   .nav-item {
     line-height: 40px;
@@ -64,7 +72,7 @@
   
   .nav-item:hover:after {
     width: 100%;
-    background: #3fe4dc;
+    background: rgb(24 58 74);
   }
   
   .nav-item .active {
@@ -90,14 +98,14 @@
     }
   
     .nav-menu.active{
-      background-color: #060f24;
+      background-color: #060300;
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
     }
     .nav-item .active {
-      color: #3fe4dc;
+      color: rgb(24 58 74);
       border: none;
     }
     .nav-links {

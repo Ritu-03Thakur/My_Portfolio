@@ -1,0 +1,33 @@
+*{
+
+    font-family: "Raleway", sans-serif;
+}
+.footer{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .social-icon,
+  .social-icon a   {
+    z-index: 5 ;
+    margin: 10px;
+    padding: 5px;
+   color:  #0d6463  ;
+  }
+  .social-icon a {
+    padding: 10px;
+  }
+  .social-icon a:hover {
+    color: #0e343f;
+  }
+
+  @media (max-width: 730px) {
+    .footer{
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
