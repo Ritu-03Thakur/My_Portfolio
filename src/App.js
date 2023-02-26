@@ -7,6 +7,7 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import Footer from "./components/Footer/Footer";
 import Project from "./components/Project";
+import Resume from "./components/Resume";
 import { useState } from "react";
 
 const Layout = () => {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/Project",
         element: <Project />,
+      },
+      {
+        path: "/Resume",
+        element: <Resume />,
       },
      
       

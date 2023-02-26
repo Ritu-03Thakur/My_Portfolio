@@ -3,13 +3,18 @@
     font-family: "Raleway", sans-serif;
 }
 .footer{
+  font-size: 13px;
+  margin-top: 45px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #757575;
-}
 
+hr{
+  color: #757575;
+  border: 10px;
+}
   .social-icon,
   .social-icon a   {
     z-index: 5 ;
@@ -24,6 +29,7 @@
     color: #0e343f;
   }
 
+}
   @media (max-width: 730px) {
     .footer{
       flex-direction: column;

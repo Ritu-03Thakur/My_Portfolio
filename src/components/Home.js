@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 
 function Home() {
@@ -30,6 +31,10 @@ function Home() {
               </a>
               <a href="https://www.twitter.com/">
                 <TwitterIcon sx={{ fontSize: "30px" , color : "#1f9f93" }} />
+              </a>
+
+              <a href="https://www.instagram.com/">
+                <InstagramIcon sx={{ fontSize: "30px" , color : "#1f9f93" }} />
               </a>
         </div>
         

@@ -12,7 +12,6 @@ function Skill() {
     <>
       <div className="skill">
         <div className="head">
-
         <h1 className="heading">SKILL</h1>
         </div>
         <p>

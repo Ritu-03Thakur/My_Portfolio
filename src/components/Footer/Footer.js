@@ -4,13 +4,14 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-import "./Footer.css";
+import "./Footer.scss";
 
 
 export default function Footer() {
   return (
     <>
       <div className="footer">
+       
    <div className="design">
     <span>Designed and Developed by Ritu Thakur</span>
    </div>

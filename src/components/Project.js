@@ -12,15 +12,21 @@ export default function Project() {
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/weather.png"
           desc = " Weather App "
+          git = "https://github.com/Ritu-03Thakur"
+          site = ""
           />
 
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/shawn.png"
           desc = " Shawn  website "
+          git = "https://github.com/Ritu-03Thakur"
+          site = ""
           />
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/chat.png"
           desc = " Ritz-Chat App "
+          git = "https://github.com/Ritu-03Thakur"
+          site = ""
           />
           
         </div>
