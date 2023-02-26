@@ -12,21 +12,21 @@ export default function Project() {
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/weather.png"
           desc = " Weather App "
-          git = "https://github.com/Ritu-03Thakur"
-          site = ""
+          git = "https://github.com/Ritu-03Thakur/WeatherApp"
+          site = "https://weather-app-zeta-nine-68.vercel.app/"
           />
 
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/shawn.png"
           desc = " Shawn  website "
-          git = "https://github.com/Ritu-03Thakur"
-          site = ""
+          git = "https://github.com/Ritu-03Thakur/shawn-website"
+          site = "https://shawn-website.vercel.app/"
           />
           <ProjectCard sx={{ m : 5 }  } 
           pic = "./images/chat.png"
           desc = " Ritz-Chat App "
-          git = "https://github.com/Ritu-03Thakur"
-          site = ""
+          git = "https://github.com/Ritu-03Thakur/chat-app"
+          site = "https://ritz-chat.netlify.app"
           />
           
         </div>
