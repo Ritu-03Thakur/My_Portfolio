@@ -20,9 +20,10 @@ export default function ProjectCard(props) {
         width = {75}
       />
       <div className="mask" style={{display : "flex" ,  gap : "10px" , flexDirection : "column" }}>
-        <p>{props.desc} </p>
+        <p style={{display :  "flex" , color : "#a19c9c" , gap : "5px" , justifyContent : "center"
+        }}>{props.desc} </p>
         <div className="links" style={{display : "flex" ,  gap : "10px"  }}>
-          <Button className="info" size="medium" variant="contained" >Github</Button>
+          <Button className="info" size="medium" variant="contained"  >Github</Button>
           <Button className="info" size="medium" variant="contained" >Demo</Button>
         </div>
       </div>

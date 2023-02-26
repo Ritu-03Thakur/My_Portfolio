@@ -11,9 +11,10 @@ body {
   background: #000000;
 }
 
-
+ .heading{
+  color: #d1dad9;
+ }
 .about,
-.home,
 .skill
  {
   padding: 15px;
@@ -25,20 +26,67 @@ body {
   height: 630px;
 }
 p {
-  color: #a11ab3;
+  display: flex;
+ 
+  justify-content: center;
+  color: #757575;
     font-size: 18px;
     font-weight: 500;
-    z-index: 5;
+   
 }
-.heading {
-    z-index: 3;
-}
+
 
 /******************************************/
 /* Home Page */
 /******************************************/
+
+.home{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   gap: 15px;
+   flex-direction: column;
+
+  .heading{
+    color: #d1dad9;
+  }
+  .heading1{
+    color: #1f9f93;
+  }
+
+   .find{
+
+    img{
+      height: 200px;
+     width: 180px;
+     border-radius: 10px;
+    }
+    h2{
+      display: flex;
+      font-size: 25px;
+      color: #d4c9c9;
+      font-weight: 500;
+     
+    }
+    p{
+      display: flex;
+      gap: 10px;
+      span{
+        color:#1f9f93;  
+      }
+    }
+
+    .icons{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+     
+    }
+   }
+}
 .heading1 {
-  color: #1bab68;
+ 
     z-index: 5;
 }
 
@@ -69,7 +117,7 @@ p {
 }
 .card-title,
 .card-img-top {
-  color: rgb(161 198 211);
+  color: #26a775;
 }
 /******************************************/
 /* Project Page */
@@ -118,14 +166,14 @@ p {
   }
   .contact,
   .skill ,
-  .home , .about , 
+   .about , 
   .project
    {
     flex-direction: column;
     overflow: hidden;
     position: relative;
   }
-   .home , .about{
+    .about{
     height: 100vh;
    }
    .about{
@@ -181,7 +229,7 @@ p {
   border-radius: 23px;
 	width: 25px;
 	height: 25px;
-	background: rgb(69 86 98 / 75%);
+	background: #26a775;
 	animation: animate 20s linear infinite;
 	bottom: -150px;
 }

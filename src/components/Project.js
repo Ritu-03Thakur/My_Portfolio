@@ -10,16 +10,16 @@ export default function Project() {
         </div>
         <div className="projectList">
           <ProjectCard sx={{ m : 5 }  } 
-          pic = "./images/logo.jpeg"
+          pic = "./images/weather.png"
           desc = " Weather App "
           />
 
           <ProjectCard sx={{ m : 5 }  } 
-          pic = "./images/logo.jpeg"
+          pic = "./images/shawn.png"
           desc = " Shawn  website "
           />
           <ProjectCard sx={{ m : 5 }  } 
-          pic = "./images/logo.jpeg"
+          pic = "./images/chat.png"
           desc = " Ritz-Chat App "
           />
           
