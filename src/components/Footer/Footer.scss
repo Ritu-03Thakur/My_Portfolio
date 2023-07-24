@@ -1,40 +1,36 @@
-*{
 
-    font-family: "Raleway", sans-serif;
-}
+
 .footer{
-  font-size: 13px;
-  margin-top: 45px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #757575;
-
-hr{
-  color: #757575;
-  border: 10px;
-}
-  .social-icon,
-  .social-icon a   {
-    z-index: 5 ;
-    margin: 10px;
-    padding: 5px;
-   color:  #1f9f93  ;
-  }
-  .social-icon a {
-    padding: 10px;
-  }
-  .social-icon a:hover {
-    color: #0e343f;
-  }
-
-}
-  @media (max-width: 730px) {
-    .footer{
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 10px;
+    color: rgb(207, 197, 176); 
+     
+    .footer-start{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+        }
     }
+
+    .footer-end{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        font-size: 13px;
+    }
+}
+$md-breakpoint: 530px;
+@media (max-width: $md-breakpoint) { 
+  .footer{
+    padding: 15px; 
+  .footer-start{
+    align-items: baseline;
   }
-  
+  }
+}

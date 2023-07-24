@@ -3,12 +3,10 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // components
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
-import Skill from "./components/Skill";
 import Footer from "./components/Footer/Footer";
-import Project from "./components/Project";
-import Resume from "./components/Resume";
 import { useState } from "react";
+import Project from "./components/Project";
+
 
 const Layout = () => {
   return (
@@ -30,21 +28,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/About",
-        element: <About />,
-      },
-      {
-        path: "/Skill",
-        element: <Skill />,
-      },
-      {
-        path: "/Project",
+        path: "/project",
         element: <Project />,
       },
-      {
-        path: "/Resume",
-        element: <Resume />,
-      },
+     
      
       
     ],
