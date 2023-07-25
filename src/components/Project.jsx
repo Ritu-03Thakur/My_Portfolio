@@ -1,34 +1,17 @@
-import ProjectCard from "./ProjectCard/ProjectCard";
+import ProjectCard from "./ProjectCard";
+import { projectDetails } from "../data/data";
 
 export default function Project() {
   return (
     <>
-      <div className="project" id="projects">
-        <div className="head">
-
-        <h1 className="heading">PROJECT</h1>
+      <div className="projects" id="projects">
+        <div className="heading">
+        <h1 >PROJECT</h1>
         </div>
         <div className="projectList">
-          <ProjectCard sx={{ m : 5 }  } 
-          pic = "./images/weather.png"
-          desc = " Weather App "
-          git = "https://github.com/Ritu-03Thakur/WeatherApp"
-          site = "https://weather-app-zeta-nine-68.vercel.app/"
-          />
-
-          <ProjectCard sx={{ m : 5 }  } 
-          pic = "./images/shawn.png"
-          desc = " Shawn  website "
-          git = "https://github.com/Ritu-03Thakur/shawn-website"
-          site = "https://shawn-website.vercel.app/"
-          />
-          <ProjectCard sx={{ m : 5 }  } 
-          pic = "./images/chat.png"
-          desc = " Ritz-Chat App "
-          git = "https://github.com/Ritu-03Thakur/chat-app"
-          site = "https://ritz-chat.netlify.app"
-          />
-          
+          {projectDetails.map((items) => (
+            <ProjectCard sx={{ m: 5 }} key={items.id} items={items} />
+          ))}
         </div>
       </div>
     </>

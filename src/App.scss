@@ -37,11 +37,11 @@ body {
 /******************************************/
 
 .heroSection {
+  margin: auto ;
   display: flex;
   position: relative;
   justify-content: center;
   top: 109px;
-  padding: 50px;
   
   video{ 
     position: absolute;
@@ -82,9 +82,9 @@ body {
 /******************************************/
 
 .about {
-  padding-top: 65px;
   display: flex;
-  flex-direction: column;
+    margin-top: 210px;
+    flex-direction: column;
   .about-heading {
     font-size: 32px;
     color: #1f9f93;
@@ -140,8 +140,7 @@ $md-breakpoint: 768px;
     color: #1f9f93;
   }
 }
-.cardList,
-.projectList {
+.cardList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -166,18 +165,59 @@ $md-breakpoint: 768px;
 /* Project Page */
 /******************************************/
 
-.project {
-  margin-top: 35px;
-  width: 100%;
+.projects {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  height: 630px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  .heading{
+   h1{
+    font-size: 32px;
+    color: #1f9f93;
+    padding: 20px 0 20px 0;
+   }
+  }
+  .projectList{
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 40px;
+     .card{
+      display: flex;
+      flex-direction: column;
+      background-color: #6f6f47bf;
+      .card-img{
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .card-heading{
+        padding: 5px;
+        h2{
+          color: #03302edb;
+        }
+        p{
+         color :  #091114 ; 
+        }
+        .card-link{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+     }
+  }
+  
 }
-.projectList {
-  z-index: 5;
+$md-breakpoint: 600px;
+@media (max-width: $md-breakpoint) {
+  .projects{
+
+    .projectList{
+    grid-template-columns: auto ;
+    }
+  }
 }
+
 
 /******************************************/
 /* Testimonials */
@@ -195,7 +235,7 @@ $md-breakpoint: 768px;
   }
   .testimonials-content{
     .mySwiper{
-    width: max-width- 1000px;
+    width: calc(100% - 20px);
     display: grid;
     gap: 8px;
     
@@ -275,8 +315,8 @@ $md-breakpoint: 768px;
     height: 1000px;
   }
   .contact,
-  .skill,
-  .project {
+  .skill
+  {
     flex-direction: column;
     overflow: hidden;
     position: relative;
@@ -287,9 +327,7 @@ $md-breakpoint: 768px;
     height: 900px;
   }
 
-  .project {
-    top: 40px;
-  }
+  
   .navigation {
     justify-content: center;
     align-items: center;
@@ -301,13 +339,42 @@ $md-breakpoint: 768px;
  
 }
 
-@media (max-width: 760px) {
-  .project {
-    top: 40px;
-    flex-direction: column;
-    height: 450%;
-    overflow: hidden;
-    position: relative;
+
+
+/******************************************/
+/* Footer */
+/******************************************/
+.footer{
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  gap: 10px;
+  color: rgb(207, 197, 176); 
+   
+  .footer-start{
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      li{
+          list-style: none;
+      }
+  }
+
+  .footer-end{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      font-size: 13px;
   }
 }
-
+$md-breakpoint: 530px;
+@media (max-width: $md-breakpoint) { 
+.footer{
+  padding: 15px; 
+.footer-start{
+  align-items: baseline;
+}
+}
+}

@@ -4,11 +4,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import { ArrowUpward , Instagram , WhatsApp , Facebook , Email , LogoDev } from "@mui/icons-material";
+import { ArrowUpward , Instagram , WhatsApp , Facebook , Email , LogoDev  } from "@mui/icons-material";
 
 import Button from "@mui/material/Button";
 
-import "./Footer.scss";
+import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 
@@ -21,20 +21,20 @@ export default function Footer() {
           <div className="left">
             <span>Quicks Links</span>
             <li>
-                <Link to = {"/#skills"}className="link">  Skill
-            </Link>
+                <HashLink to = {"/#skills"}className="link">  Skill
+            </HashLink>
             </li>
             <li>
-                <Link to = {"/#about"}className="link">  About
-            </Link>
+                <HashLink to = {"/#about"}className="link">  About
+            </HashLink>
             </li>
             <li>
-                <Link to = {"/#projects"}className="link"> Project
-            </Link>
+                <HashLink to = {"/#projects"}className="link"> Project
+            </HashLink>
             </li>
             <li>
-                <Link to = {"/#testimonials"}className="link"> Testimonials
-            </Link>
+                <HashLink to = {"/#testimonials"}className="link"> Testimonials
+            </HashLink>
             </li>
             <li>
                 <Link to = {"/"}className="link">  Download Resume
@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="right">
             <span>Connect</span>
           <li>
-                <Link to = {"/" }className="link">  Blog
-            </Link>
+                <HashLink to = {"/" }className="link">  Blog
+            </HashLink>
             </li>
             <li>
-            <Link to = {"/"}className="link" > chedule A Meeting
+            <Link to = {"/"}className="link" > Schedule A Meeting
             </Link>
             </li>
             <div className="social-icon">
@@ -84,9 +84,11 @@ export default function Footer() {
 
         <div className="footer-end">
          <span>Built with <FavoriteIcon style={{ color: "rgb(193 112 12)"}}/> By Ritu Thakur</span>
+           <HashLink to={"/#heroSection"} className="link" style={{  color: "#f7f7f7"}}>
          <Button size="small" variant="contained" style={{  backgroundColor:" rgb(26 90 84)" ,  color: "#f7f7f7" , width : "200px"}}>
-           <Link to={"/#heroSection"} className="link" style={{  color: "#f7f7f7"}}>Back to Top <ArrowUpward style={{  color: "#f7f7f7"}}/>  </Link>
+            Back to Top <ArrowUpward style={{  color: "#f7f7f7"}}/> 
           </Button>
+            </HashLink>
          <span>Copyright © 2023 RT</span>
         </div>
        

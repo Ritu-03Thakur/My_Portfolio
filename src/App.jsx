@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // components
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 import { useState } from "react";
 import Project from "./components/Project";
 
