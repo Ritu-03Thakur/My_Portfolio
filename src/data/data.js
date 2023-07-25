@@ -26,7 +26,7 @@ const projectDetails = [
         pic : "./images/pumaStore.png" , 
         title : " Puma Store " , 
         desc : " Puma store clone built with ReactJS and Sass having sleek and modern design.  " , 
-        git : "https://github.com/Ritu-03Thakur/puma-store" , 
+        githubLink : "https://github.com/Ritu-03Thakur/puma-store" , 
         site : "https://puma-store-rt.netlify.app/"
     }, 
     {
@@ -42,7 +42,7 @@ const projectDetails = [
         pic : "./images/weather.png" , 
         title : " Weather App " , 
         desc : " weather app  built with reactJS which displays the current temperature , humidity , wind speed etc. " , 
-        git : "https://github.com/Ritu-03Thakur/WeatherApp" , 
+        githubLink  : "https://github.com/Ritu-03Thakur/WeatherApp" , 
         site : "https://weather-app-zeta-nine-68.vercel.app/"
     }, 
 ]
