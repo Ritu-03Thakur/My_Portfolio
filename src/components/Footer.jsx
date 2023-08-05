@@ -84,11 +84,11 @@ export default function Footer() {
 
         <div className="footer-end">
          <span>Built with <FavoriteIcon style={{ color: "rgb(193 112 12)"}}/> By Ritu Thakur</span>
-           <HashLink to={"/#heroSection"} className="link" style={{  color: "#f7f7f7"}}>
+           <Link  onClick={() => window.scrollTo(0, 0)} className="link" style={{  color: "#f7f7f7"}}>
          <Button size="small" variant="contained" style={{  backgroundColor:" rgb(26 90 84)" ,  color: "#f7f7f7" , width : "200px"}}>
             Back to Top <ArrowUpward style={{  color: "#f7f7f7"}}/> 
           </Button>
-            </HashLink>
+            </Link>
          <span>Copyright © 2023 RT</span>
         </div>
        
