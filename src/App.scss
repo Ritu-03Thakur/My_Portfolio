@@ -153,7 +153,7 @@ $md-breakpoint: 768px;
   justify-content: center;
   .skill-card{
     background-color: rgba(11, 18, 20, 0.45);
-    box-shadow: 0px 0px 15px rgba(66, 131, 131, 0.25);
+    box-shadow: 3px 3px 20px rgba(166, 219, 219 , 0.25);;
     border-radius: 28px;
      img{
       border-radius: 28px;
@@ -353,6 +353,54 @@ $md-breakpoint: 600px;
 }
 
 
+
+/******************************************/
+/* Contact Me */
+/******************************************/
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   .contact-heading{
+    font-size: 32px;
+    color: #1f9f93;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+
+  }
+  .contact-title{
+    font-size: 20px;
+    color: #728381;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0 10px 0;
+  }
+  .contact-input{
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+  
+    width: 300px;
+    .contact-input{
+      color: wheat;
+      fieldset{
+
+        border-color: rgba(233 ,228 ,228 ,0.23);
+      }
+      label{
+        color: #b7c0bf;
+      }
+    }
+    .btn{
+    display: flex;
+    margin: auto;
+    }
+  }
+}
 
 /******************************************/
 /* Footer */

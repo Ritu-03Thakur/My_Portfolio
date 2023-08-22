@@ -4,6 +4,7 @@ import Skill from "./Skill";
 import Project from "./Project";
 import Testimonials from "./Testimonials";
 import HeroSection from "./HeroSection";
+import Contact from "./Contact"
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
       <Skill />
       <Project />  
       <Testimonials />
+      <Contact />
    </>
      
    
