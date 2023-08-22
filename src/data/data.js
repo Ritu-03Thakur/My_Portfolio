@@ -55,4 +55,68 @@ const projectDetails = [
     }, 
 ]
 
-export {testimonials , projectDetails} ; 
+const skill = [
+    
+    {
+        id : "S1"  , 
+        img : "./img/cpp.jpeg"
+    } , 
+    {
+        id : "S2"  , 
+        img : "./img/java.jpeg"
+    } , 
+    {
+        id : "S3"  , 
+        img : "./img/html.jpeg"
+    } , 
+    {
+        id : "S5"  , 
+        img : "./img/css.jpeg"
+    } , 
+    {
+        id : "S6"  , 
+        img : "./img/js.jpeg"
+    } , 
+    {
+        id : "S7"  , 
+        img : "./img/react.jpeg"
+    } , 
+    {
+        id : "S8"  , 
+        img : "./img/nextjs.jpeg"
+    },
+    {
+        id : "S9"  , 
+        img : "./img/nodejs.jpeg"
+    } , 
+    
+    {
+        id : "S10"  , 
+        img : "./img/ts.jpeg"
+    } , 
+    {
+        id : "S11"  , 
+        img : "./img/mongodb.jpeg"
+    } , 
+    {
+        id : "S12"  , 
+        img : "./img/tailwind.jpeg"
+    } , 
+    
+    {
+        id : "S13"  , 
+        img : "./img/figma.jpeg"
+    } , 
+    {
+        id : "S14"  , 
+        img : "./img/git.jpeg"
+    } , 
+    {
+        id : "S15"  , 
+        img : "./img/github.jpeg"
+    } , 
+]
+
+
+
+export {testimonials , projectDetails , skill} ; 

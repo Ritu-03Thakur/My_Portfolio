@@ -21,10 +21,11 @@ function About() {
             developer.
             
           </p>
-
+      <a href={"/"} className="link">
           <Button  size="medium" variant="contained" style={{backgroundColor : "rgb(26 90 84)"  ,  color: "#f7f7f7"}}>
             Download CV
           </Button>
+      </a>
         </div>
           </div>
 

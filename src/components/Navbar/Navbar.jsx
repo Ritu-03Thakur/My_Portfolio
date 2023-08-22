@@ -25,12 +25,8 @@ const Navbar = () => {
       </Link>
     <div className="navbar-content">
 
-      <ul  className= {`nav-menu ${!sideNav ? "active" : ""} `} >
-        <li className="cursor-pointer">
-          <HashLink to="/#heroSection" onClick={() => window.scrollTo(0, 0)}>
-            Home
-          </HashLink>
-        </li>
+      <ul  className= {`nav-menu ${sideNav ? "":"active" } `} >
+ 
        
         <li className="cursor-pointer">
           <HashLink to="/#about">About</HashLink>
@@ -70,15 +66,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-
-
-     
-      
     </div>
-
- 
-
-     
     </div>
   );
 };

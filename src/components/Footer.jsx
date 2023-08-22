@@ -4,7 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import { ArrowUpward , Instagram , WhatsApp , Facebook , Email , LogoDev  } from "@mui/icons-material";
+import { ArrowUpward , Instagram  , Email , LogoDev  } from "@mui/icons-material";
 
 import Button from "@mui/material/Button";
 
@@ -63,16 +63,11 @@ export default function Footer() {
                 <TwitterIcon sx={{ fontSize: "25px" , color : "#2d7aee"}} />
               </a>
 
-              <a className="link" href="https://www.instagram.com">
+              <a className="link" href="https://www.instagram.com/ritu_03thakur">
                 <Instagram sx={{ fontSize: "25px" , color : "#c8377f" }} />
               </a>
-              <a className="link" href="https://www.whatsapp.com">
-                <WhatsApp sx={{ fontSize: "25px"  , color : "#148c1a"}} />
-              </a>
-              <a className="link" href="https://www.facebook.com">
-                <Facebook sx={{ fontSize: "25px"  , color : "#082266"}} />
-              </a>
-              <a  className="link" href="https://ritutec001@gmail.com">
+             
+              <a  className="link" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
                 <Email sx={{ fontSize: "25px"  , color : "#c84e0c"}} />
               </a>
               <a className="link" href="dev.to/rituthakur">

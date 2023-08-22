@@ -139,13 +139,26 @@ $md-breakpoint: 768px;
   .heading {
     color: #1f9f93;
   }
+  .skill-desc{
+    font-size: 20px;
+    color: #43716c;
+  }
 }
 .cardList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 8px;
   align-items: center;
   justify-content: center;
+  .skill-card{
+    background-color: rgba(11, 18, 20, 0.45);
+    box-shadow: 0px 0px 15px rgba(66, 131, 131, 0.25);
+    border-radius: 28px;
+     img{
+      border-radius: 28px;
+     }
+  }
 }
 .card,
 .contactCard {

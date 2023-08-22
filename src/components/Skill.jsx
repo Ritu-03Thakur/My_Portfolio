@@ -1,12 +1,6 @@
-import Card from "./Card/Card";
-import C from "./img/cLanguage_logo.jpeg";
-import Java from "./img/java_logo.jpeg";
-import Html from "./img/HTML_logo.jpeg";
-import css from "./img/CSS_logo.jpeg";
-import JavaScript from "./img/JavaScript_logo.jpeg";
-import React from "./img/ReactJs_logo.jpeg";
-import bootstrap from "./img/Bootstrap_logo.jpeg";
-import git from "./img/Git_logo.jpeg";
+import Card from "./Card";
+import { skill } from "../data/data";
+
 function Skill() {
   return (
     <>
@@ -14,22 +8,18 @@ function Skill() {
         <div className="head">
         <h1 className="heading">SKILL</h1>
         </div>
-        <p>
+        <p className="skill-desc">
           Here are the main programming langauges <br />
           that I have experience with :{" "}
         </p>
      <div className="cardList">
-        <Card title="React" img={React} />
-        <Card title="C" img={C} />
-
-        <Card title="Java" img={Java} />
-        <Card title="HTML" img={Html} />
-
-        <Card title="CSS" img={css} />
-        <Card title="JavaScript" img={JavaScript} />
+      {
+        skill.map((s)=>{
+          return   <Card key={s.id} img = {s.img}/>
+        })
+      }
        
-        <Card title="Bootstrap" img={bootstrap} />
-        <Card title=" Git" img={git} />
+        
         </div>
       </div>
     </>
