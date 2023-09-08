@@ -13,6 +13,8 @@ const Navbar = () => {
   const handleClick = () => setSideNav(!sideNav);  
 
   return (
+   
+
     <div className="navbar">
       <Link
         className="cursor-pointer"
@@ -68,6 +70,7 @@ const Navbar = () => {
       </div>
     </div>
     </div>
+   
   );
 };
 

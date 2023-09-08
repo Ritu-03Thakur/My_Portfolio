@@ -1,42 +1,14 @@
 import "./App.scss";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {  BrowserRouter, Routes, Route } from "react-router-dom";
 // components
-import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
-import Footer from "./components/Footer";
 import { useState } from "react";
-import Project from "./components/Project";
+import AllProject from "./components/AllProject";
 
 
-const Layout = () => {
-  return (
-    <div className="app">
-      <Navbar />
-      <Outlet />
-      < Footer /> 
-    </div>
-  );
-};
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/project",
-        element: <Project />,
-      },
-     
-     
-      
-    ],
-  },
-]);
+
+
 
 export default function App() {
   const [loading , setLoading] = useState(true);
@@ -50,7 +22,12 @@ export default function App() {
   return (
    !loading && (
     <>
-     <RouterProvider router={router} />    
+     <BrowserRouter>
+     <Routes>
+      <Route path={"/"} element = {<Home/>}  />
+      <Route path={"/allprojects"} element = {<AllProject/>}  />
+     </Routes>
+     </BrowserRouter>  
     </>
 
    )
