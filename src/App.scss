@@ -278,6 +278,7 @@ $md-breakpoint: 600px;
             color: #afebe3;
             p{
               margin: auto;
+              max-width: 350px;
             }
           }
           figcaption{
@@ -440,3 +441,23 @@ $md-breakpoint: 530px;
 }
 }
 
+.contact-gradient{
+
+  position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(60px);
+    background: linear-gradient(to right, #1d3537, #430524, #5b411b) ; 
+    animation: moveCircle 6s linear infinite;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+   transform: rotate(360deg);
+  }
+  
+}

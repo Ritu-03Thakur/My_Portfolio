@@ -15,7 +15,7 @@ export default function Project() {
   <ProjectCard sx={{ m: 5 }} key={items.id} items={items} />
 ))}
         </div>
-        <Link to={"/allprojects"} >        
+        <Link to={"/allprojects"} onClick={() => window.scrollTo(0, 0)}>        
         <Button  size="medium" variant="contained" style={{backgroundColor : "rgb(26 90 84)"  ,  color: "#f7f7f7"}}>
             MORE PROJECTS
           </Button>
