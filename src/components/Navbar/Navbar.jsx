@@ -27,7 +27,7 @@ const Navbar = () => {
       </Link>
     <div className="navbar-content">
 
-      <ul  className= {`nav-menu ${sideNav ? "":"active" } `} >
+      <ul  className= {`nav-menu ${sideNav ? "active":"" } `} >
  
        
         <li className="cursor-pointer">
@@ -61,8 +61,8 @@ const Navbar = () => {
           className="nav-icon"
         >
         
-          {sideNav ? (
-            <MenuIcon size={22} style={{ color: "#f7f7f7"}} />
+          {!sideNav ? (
+            <MenuIcon size={22} style={{ color: "#f7f7f7" , }} />
           ) : (
             <ClearIcon size={22} style={{  color: "#f7f7f7"}} />
           )}
