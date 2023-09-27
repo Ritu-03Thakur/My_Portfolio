@@ -39,11 +39,11 @@ const projectDetails = [
     }, 
     {
          id : "0P03" , 
-        pic : "./images/shawn.png" , 
-        title : " Shawn  website  " , 
-        desc : " Shawn an online shopping app built with ReactJS having clean and intutitive interface." , 
-        githubLink : "https://github.com/Ritu-03Thakur/shawn-website" , 
-        site : "https://shawn-website.vercel.app/"
+        pic : "./images/cc.png" , 
+        title : " Crazy Canvas  " , 
+        desc : " Experience a wacky canvas filled with random jokes, comical cartoon sounds, and much more!" , 
+        githubLink : "https://github.com/Ritu-03Thakur" , 
+        site : "https://crazy-canvas.vercel.app/"
     }, 
     {
          id : "0P04" , 
