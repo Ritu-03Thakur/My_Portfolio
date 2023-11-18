@@ -2,7 +2,7 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import  CardMedia  from "@mui/material/CardMedia";
 import Button from '@mui/material/Button';
-import {GitHub , Language} from "@mui/icons-material";
+import {ReadMore , Language} from "@mui/icons-material";
 
 
 
@@ -34,7 +34,7 @@ const  ProjectCard = ({items : { pic , title , desc , site , githubLink  }}) => 
          </a>
 
         <a href={githubLink} >        
-          <Button  size="small" variant="contained"  style={btn}  >View On Github  <GitHub sx={{ fontSize: "18px" , color : "#020202" }}/> </Button>
+          <Button  size="small" variant="contained"  style={btn}  >Read More  <ReadMore sx={{ fontSize: "18px" , color : "#020202" }}/> </Button>
          </a>
 
 
