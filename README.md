@@ -1,2 +1,7 @@
-# My_Portfolio 
-Website :- https://ritu-03thakur.netlify.app
+# My Old Portfolio Website
+
+# Tech Stack 
+- React JS
+- Sass
+- Material UI
+
